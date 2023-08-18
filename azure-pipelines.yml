@@ -20,7 +20,7 @@ stages:
       displayName: Build an image
       inputs:
         command: build
--       buildContext: $(Build.SourcesDirectory)
+        buildContext: $(Build.SourcesDirectory)
         dockerfile: '$(Build.SourcesDirectory)/sample-dotnet-api/Dockerfile'
         tags: |
           $(tag)
